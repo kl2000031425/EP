@@ -1,0 +1,35 @@
+<html xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<head><title>SignUp</title></head>
+
+<body>
+		<h:form action="">
+			
+			Name : <h:inputText value="#{user.username}" id="usname" validatorMessage="*Required" />
+			<h:message for="usname" Style="color:red"/><br/><br/>
+			
+			First Name : <h:inputText value="#{user.fname}" id="fname" validatorMessage="*Required" />
+			<h:message for="fname" Style="color:red"/><br/><br/>
+			
+			Last Name : <h:inputText value="#{user.lname}" id="lname" validatorMessage="*Required" />
+			<h:message for="lname" Style="color:red"/><br/><br/>
+			
+			Email : <h:inputText value="#{user.email}" id="email" validatorMessage="*Required" />
+			<h:message for="email" Style="color:red"/><br/><br/>
+			
+			Mobile Number : <h:inputText value="#{user.mobileno}" id="mno" validatorMessage="*Must be 10 digit" />
+			<h:message for="mno" Style="color:red"/><br/><br/>
+			
+			Password : <h:inputSecret value="#{user.pwd}" id="pwd" validatorMessage="*atleast size 8,1 digit,1 uppercase,1 Lowercase,1 special chracter" />
+			<h:message for="pwd" Style="color:red"/><br/><br/>
+			
+			Confirm Password : <h:inputSecret value="#{user.confirmpwd}" id="pwd1" validatorMessage="Must be same" />
+			<h:message for="pwd1" Style="color:red"/><br/><br/>
+			
+			<h:commandButton action="login" value="Submit" />
+			
+		</h:form>
+	
+</body>
+
+</html>
